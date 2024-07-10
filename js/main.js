@@ -54,8 +54,6 @@ playerBtn.addEventListener('click', startGame);
 reBtn.addEventListener('click', function () {
     resPanel.classList.add('block');
     blackScreen.classList.add('block');
-    handleRestartGame();
-
 });
 // cancel button onclick
 cancelBtn.addEventListener('click', function () {
@@ -67,6 +65,7 @@ yesRestartBtn.addEventListener('click', function () {
     resPanel.classList.remove('block');
     blackScreen.classList.remove('block');
     valueFunc();
+    handleRestartGame();
 });
 function valueFunc() {
     xNumber = 0;
